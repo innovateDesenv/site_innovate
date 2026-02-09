@@ -66,6 +66,7 @@
           <li><a href="#features">Produtos</a></li>
           <!-- <li><a href="#services">Services</a></li> -->
           <li><a href="#pricing">Preços</a></li>
+          <li><a href="#parceria">Parceiros</a></li>
           <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
@@ -246,7 +247,7 @@
                     <i class="bi bi-telephone-fill"></i>
                     <div>
                       <p class="contact-label">Fone</p>
-                      <p class="contact-number">(77) 99112-4042</p>
+                      <p class="contact-number">(77) 99116-2642</p>
                     </div>
                   </div>
                 </div>
@@ -854,7 +855,7 @@
 
       </div>
 
-    </section>-->
+    </section> -->
 
     <!-- Pricing Section -->
     <section id="pricing" class="pricing section light-background">
@@ -945,6 +946,7 @@
               </a>
             </div>
           </div>
+          
 
           <!-- Premium Plan -->
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
@@ -996,7 +998,106 @@
 
       </div>
 
-    </section><!-- /Pricing Section -->
+    </div>
+</section>
+<section id="parceria" class="partners section light-background">
+
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Nossos Parceiros – Galeria de Fotos</h2>
+    <p>Clínicas que utilizam nossas soluções</p>
+  </div>
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="swiper init-swiper partners-swiper">
+
+      <script type="application/json" class="swiper-config">
+      {
+        "loop": false,
+        "speed": 600,
+        "autoplay": {
+          "delay": 3000,
+          "disableOnInteraction": false
+        },
+        "slidesPerView": 1,
+        "spaceBetween": 30,
+        "navigation": {
+          "nextEl": ".swiper-button-next",
+          "prevEl": ".swiper-button-prev"
+        },
+        "pagination": {
+          "el": ".swiper-pagination",
+          "clickable": true
+        },
+        "breakpoints": {
+          "576": { "slidesPerView": 2 },
+          "768": { "slidesPerView": 3 },
+          "992": { "slidesPerView": 4 }
+        }
+      }
+      </script>
+
+      <div class="swiper-wrapper">
+
+        <!-- PARCEIRO 1 -->
+        <div class="swiper-slide">
+          <div class="partner-card">
+
+            <a href="assets/img/partners/gastroscenter/frente1.jpg"
+               class="glightbox"
+               data-gallery="gastrocenter">
+              <img src="assets/img/partners/gastroscenter/logo.png"
+                   class="partner-logo"
+                   alt="Gastrocenter">
+            </a>
+
+            <p>Clínica especializada</p>
+
+            <a href="assets/img/partners/gastroscenter/frente2.jpg"
+               class="glightbox d-none"
+               data-gallery="gastrocenter"></a>
+
+            <a href="assets/img/partners/gastroscenter/recepcao.jpg"
+               class="glightbox d-none"
+               data-gallery="gastrocenter"></a>
+
+          </div>
+        </div>
+
+        <!-- PARCEIRO 2 (exemplo duplicado) -->
+        <div class="swiper-slide">
+          <div class="partner-card">
+
+            <a href="assets/img/partners/fisioclin/fisioclinlogo.jpg"
+               class="glightbox"
+               data-gallery="fisioclin">
+              <img src="assets/img/partners/fisioclin/fisioclinlogo.jpg"
+                   class="partner-logo"
+                   alt="Fisioclin">
+            </a>
+
+            <p>Clínica especializada</p>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+
+    </div>
+  </div>
+</section>
+
+
+
+   
+
+        
+
+ 
 
     <!-- Faq Section -->
     <section class="faq-9 faq section light-background" id="faq">
@@ -1124,7 +1225,7 @@
                 <div class="content">
                   <h4>Fone</h4>
                   <p>(77) 99112-4042</p>
-                  <p>(77) 99116-2642</p>
+                  <!-- <p>(77) 99116-2642</p> -->
                 </div>
               </div>
 
