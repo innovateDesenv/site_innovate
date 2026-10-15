@@ -46,6 +46,26 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <!-- Umami Analytics -->
+<script defer src="https://analytics.erpinnovate.com.br/script.js" data-website-id="0544f3f0-441d-4926-b3fb-e376741f0a2b"></script>
+
+<!-- Rastreia cliques em todos os botões de WhatsApp -->
+<script>
+document.addEventListener('click', function (e) {
+  var a = e.target.closest('a[href*="wa.me"], a[href*="whatsapp.com"]');
+  if (!a) return;
+  var secao = a.closest('[id]');
+  var card = a.closest('.card, [class*="pricing"]');
+  var titulo = card && card.querySelector('h3, h4, h5');
+  var dados = {
+    local: secao ? secao.id : 'desconhecido',
+    botao: (a.textContent || '').trim() || 'icone',
+    plano: titulo ? titulo.textContent.trim() : ''
+  };
+  if (window.umami) umami.track('whatsapp_click', dados);
+  if (window.gtag) gtag('event', 'whatsapp_click', dados);
+});
+</script>
 </head>
 
 <body class="index-page">
